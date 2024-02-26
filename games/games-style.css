@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+:root {
+    --sp-text: #1abc9c;
+    --background1: #206155;
+    --background2: #333;
+}
+
+body {
+    font-family: "Noto Kufi Arabic", sans-serif;
+    line-height: 1.6;
+    direction: rtl;
+    background: #eee;
+}
+
+.y-star {
+    color: #ffff00;
+    text-shadow: 1px 1px 2px #333;
+}
+
+i {
+    margin-left: 5px;
+}
+
+.far {
+    margin-right: 20px;
+}
+
+/*******************************************/
+a {
+    text-decoration: none;
+}
+
+header {
+    background: var(--background2);
+    width: 100%;
+}
+
+.logo img {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.content {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.content .logo a,
+p {
+    color: #fff;
+    text-shadow: 1px 1px 5px var(--sp-text);
+    text-align: center;
+    font-size: 36px;
+}
+
+.nav {
+    padding: 50px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+ul li a {
+    font-size: 18px;
+    color: #eee;
+    background: var(--background1);
+    padding: 5px 8px 5px 8px;
+    border-radius: 3px;
+}
+
+ul li:hover a {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+/**********************************/
+
+section {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 15px;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+}
+
+section.all-games {
+    margin-top: 100px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/*********************************/
+* {
+    box-sizing: border-box
+}
+
+/* تنسيق الحاوية */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+/* اخفاء الصور بالحالة الافتراضية */
+.mySlides {
+    display: none;
+}
+
+/* تنسيقات زر السابق والتالي */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* تنسيق موضع زر التالي */
+.next {
+    right: 25%;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    right: 70.8%;
+    border-radius: 3px 0 0 3px;
+}
+
+/* على ازرار التنقل hover التنسيقات الخاصة بالـ */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* تنسيق النص الموجود بالسلايدات */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 5px #000;
+}
+
+/* تنسيق الارقام الموجودة بالسلايدات */
+.numbertext {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    right: 30%;
+}
+
+/* تنسيق نقاط التنقل الموجودة في منتصف السلايدر */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 20px;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* الانميشن الخاص بحركة السليدر */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.p-text span{
+    font-size: 18px;
+    box-shadow: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: block;
+    margin-top: 20px;
+}
+
+.download{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: var(--background1);
+    color: #fff;
+    width: fit-content;
+    padding: 10px 50px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+i{
+    transition: 0.3s;
+}
+.download:hover i {
+    margin-right: 10px;
+}
+/*********************************/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.footer:hover .textt {
+    border-bottom: 2px solid var(--sp-text);
+}
+
+.footer .textt {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--background1);
+    border-bottom: 2px solid transparent;
+}
+
+.footer img {
+    width: 50px;
+    border: 2px solid var(--background1);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.footer a {
+    display: inline-block;
+
+}
+
+/***************************/
+
+@media(max-width: 768px) {
+
+    ul li {
+
+        margin-bottom: 30px;
+    }
+
+}
