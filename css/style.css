@@ -39,6 +39,8 @@ header{
     display: block;
     margin: auto;
     margin-top: 20px;
+    width: 350px;
+    margin-top: -80px;
 }
 .content {
     text-align: center;
@@ -56,6 +58,7 @@ header{
     padding: 50px;
     padding-right: 40px;
     padding-bottom: 30px;
+    margin-top: -100px;
 }
 nav ul {
     display: flex;
